@@ -9,14 +9,17 @@ import StyleComponent from './StylingComponent/StyleComponent';
 import DemoLogin from './DemoState/DemoLogin';
 import TangGiamFont from './DemoState/TangGiamFont';
 import ProductList from './BTShoesShop/ProductList';
+import BTXemChiTiet from './BTXemChiTiet/BTXemChiTiet';
+import BTShoesStore from './BTShoesShop/BTShoesStore';
 
 
 // app chứa các component con
 function App() {
   return (
     <>
-
-      <ProductList/>
+      {/* <BTXemChiTiet/> */}
+      <BTShoesStore/>
+      {/* <ProductList/> */}
 
       {/* <TangGiamFont/> */}
       {/* <DemoLogin/> */}
