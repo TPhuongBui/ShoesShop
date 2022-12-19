@@ -209,8 +209,8 @@ export default class BTShoesStore extends Component {
                 <a className="nav-link" href='#'>Shop</a>
               </li>
 
-              <li className="nav-item item3">
-                <a className="nav-link" href='#'>
+              <li className="item3">
+                <a className="nav-link active" href='#'>
                   <i className="fa-solid fa-xl fa-shopping-cart" data-toggle="modal" data-target="#exampleModal"></i>
                 </a>
               </li>
