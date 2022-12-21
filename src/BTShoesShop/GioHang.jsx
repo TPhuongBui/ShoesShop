@@ -10,17 +10,9 @@ export default class GioHang extends Component {
           <img style={{ width: "50px" }} src={shoesProduct.image} alt="" />
         </td>
         <td>{shoesProduct.name}</td>
-        <td>
-          <button className='btn btn-danger'>-</button>
-          <span>{shoesProduct.quanti}</span>
-          <button className='btn btn-success'>+</button>
-        </td>
-
+        <td>{shoesProduct.quantity} </td>
         <td>${shoesProduct.price.toLocaleString()}</td>
-        <td>${(shoesProduct.quanti * shoesProduct.price).toLocaleString()}</td>
-        <td>
-          <button className='btn btn-danger'>Xóa</button>
-        </td>
+        <td>${shoesProduct.description}</td>
       </tr>
     })
   }
@@ -32,7 +24,7 @@ export default class GioHang extends Component {
           <div className="modal-dialog modal-lg">
             <div className="modal-content">
               <div className="modal-header">
-                <h5 className="modal-title" id="exampleModalLabel">Modal title</h5>
+                <h5 className="modal-title" id="exampleModalLabel">Shoes Cart</h5>
                 <button type="button" className="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">×</span>
                 </button>
@@ -44,9 +36,9 @@ export default class GioHang extends Component {
                       <th>Mã giày</th>
                       <th>Hình ảnh</th>
                       <th>Tên giày</th>
-                      <th>số lượng</th>
-                      <th>đơn giá</th>
-                      <th>thành tiền</th>
+                      <th>Số lượng</th>
+                      <th>Đơn giá</th>
+                      <th>Mô tả</th>
                       <th></th>
                     </tr>
                   </thead>

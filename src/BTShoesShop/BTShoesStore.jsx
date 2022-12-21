@@ -139,7 +139,7 @@ export default class BTShoesStore extends Component {
   // Hàm thêm vào giỏ hàng
   addToCart = (shoes) => {
     // console.log(shoes);
-    let { id, name, price, image } = shoes;
+    let { id, name, price, image, quantity, description } = shoes;
     
     let shoesArrayUpdate = [...this.state.shoesArray]
 
@@ -155,7 +155,8 @@ export default class BTShoesStore extends Component {
         name: name,
         price: price,
         image: image,
-        quanti: 1
+        quantity: quantity,
+        description: description
       }
 
       shoesArrayUpdate = [...shoesArrayUpdate, spCart]
@@ -198,7 +199,7 @@ export default class BTShoesStore extends Component {
 
   render() {
     return (
-      <div className='container py-5'>
+      <div className='container py-5 mainProject'>
         <div className="row">
           <div className="col-4 leftItem ">
             <ul className="nav flex-column">
