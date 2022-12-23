@@ -11,14 +11,18 @@ import TangGiamFont from './DemoState/TangGiamFont';
 import ProductList from './BTShoesShop/ProductList';
 import BTXemChiTiet from './BTXemChiTiet/BTXemChiTiet';
 import BTShoesStore from './BTShoesShop/BTShoesStore';
+import BTGioHang from './BTGioHang/BTGioHang';
+import BTTangGiamSo from './DemoRedux/BTTangGiamSo';
 
 
 // app chứa các component con
 function App() {
   return (
     <>
+      <BTTangGiamSo/>
+      {/* <BTGioHang/> */}
       {/* <BTXemChiTiet/> */}
-      <BTShoesStore/>
+      {/* <BTShoesStore/> */}
       {/* <ProductList/> */}
 
       {/* <TangGiamFont/> */}

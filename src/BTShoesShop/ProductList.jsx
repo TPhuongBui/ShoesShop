@@ -8,7 +8,7 @@ export default class ProductList extends Component {
     renderShoesList = () =>{
         return this.props.listShoes.map((shoes) => { 
             return <div className="col-4" key={shoes.id}>
-            <ProductItem addToCart={this.props.addToCart} shoes={shoes}/>
+            <ProductItem seeCart={this.props.seeCart} shoes={shoes}/>
         </div>
          })
     }

@@ -39,6 +39,7 @@ export default class GioHang extends Component {
                       <th>Số lượng</th>
                       <th>Đơn giá</th>
                       <th>Mô tả</th>
+                      <th></th>
                     </tr>
                   </thead>
                   <tbody>

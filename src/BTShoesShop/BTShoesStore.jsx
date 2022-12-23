@@ -137,7 +137,7 @@ export default class BTShoesStore extends Component {
 
 
   // Hàm thêm vào giỏ hàng
-  addToCart = (shoes) => {
+  seeCart = (shoes) => {
     // console.log(shoes);
     let { id, name, price, image, quantity, description } = shoes;
     
@@ -220,7 +220,7 @@ export default class BTShoesStore extends Component {
 
           <div className="col-8 rightItem">
             <h1 className='nav-item'>Shoes Shop</h1>
-            <ProductList addToCart={this.addToCart} listShoes={this.listShoes} />
+            <ProductList seeCart={this.seeCart} listShoes={this.listShoes} />
           </div>
         </div>
 
